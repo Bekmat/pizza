@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1512px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body label {
+  cursor: pointer;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+  border-bottom: 2px solid #aeaeae;
+}
+
+.header input {
+  display: none;
+}
+
+.address {
+  display: flex;
+  gap: 71px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  padding: 170px;
+}
+
+.nav input {
+  display: none;
+}
+
+.nav label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #ff7a00;
+  padding: 10px 42px;
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: -90px; */
+}
+
+.main_img {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.main_img_2 {
+  display: flex;
+  margin-top: 87px;
+  gap: 18px;
+  padding-bottom: 20px;
+}
+
+.often_orders h1 {
+  font-size: 30px;
+  font-weight: 500;
+  color: black;
+  margin-top: 55px;
+  margin-left: 140px;
+}
+
+.often_pizza {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 140px;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.often_cl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 200px;
+  height: 51px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.pizz {
+  display: flex;
+  gap: 50px;
+  justify-content: flex-end;
+  margin: 0 -60px;
+}
+
+.pizza_cards {
+  width: 230px;
+  height: 288px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 60px !important;
+
+  padding: 0 15px;
+}
+
+.pizza_img .img {
+  padding: 10px 12px;
+  border-radius: 28px;
+  background: rgba(176, 170, 211, 0.4);
+  backdrop-filter: blur(17.5px);
+  margin: -20px 0 0 0;
+}
+
+.des {
+  display: flex;
+  align-items: center !important;
+  padding-top: 20px;
+}
+
+.pizz_h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pizz_h3 span {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.pizz_h3 h3 {
+  color: black;
+  width: 163px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.pizza_cards p {
+  font-size: 9px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.4);
+  margin-top: 10px;
+  width: 160px;
+  height: 55px;
+}
+
+.pizza_like {
+  display: flex;
+  align-self: flex-end !important;
+  font-size: 13px;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px !important;
+}
+
+.pizz {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-left: 120px;
+}
+
+.star {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  margin-top: 40px;
+  margin-left: 500px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  padding: 14px 55px;
+  border-radius: 5px;
+  background: #fa963a;
+  border: none;
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.footer {
+  width: 1515px;
+  height: 294px;
+  background: #fa963a;
+}
+
+.footer_1 {
+  margin-top: 61px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 175px 212px 175px;
+}
+
+.bdr {
+  width: 1167px;
+  height: 3px;
+  border-radius: 5px;
+  background: #c4c4c4;
+  display: flex;
+  margin-left: 170px;
+  margin-top: -200px;
+}
+
+.lin {
+  display: flex;
+  gap: 80px;
+}
+
+.lin a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer p {
+  margin-top: 65px;
+  margin-left: 170px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#pizza:checked ~ .pizza {
+  background: #fa963a;
+  color: white;
+}
+
+#sushi:checked ~ .sushi {
+  background: #fa963a;
+  color: white;
+}
+
+#dessert:checked ~ .dessert {
+  background: #fa963a;
+  color: white;
+}
+
+#snacks:checked ~ .snacks {
+  background: #fa963a;
+  color: white;
+}
+
+#combo:checked ~ .combo {
+  background: #fa963a;
+  color: white;
+}
+
+#pizza:checked ~ .main,
+#pizza:checked ~ .often_orders,
+#pizza:checked ~ .sushi_us,
+#pizza:checked ~ .combo_us,
+#pizza:checked ~ .snacks_us,
+#pizza:checked ~ .dessert_us {
+  display: none;
+}
+
+#sushi:checked ~ .often_orders,
+#sushi:checked ~ .main,
+#sushi:checked ~ .pizza_us,
+#sushi:checked ~ .combo_us,
+#sushi:checked ~ .snacks_us,
+#sushi:checked ~ .dessert_us {
+  display: none;
+}
+
+#combo:checked ~ .main,
+#combo:checked ~ .sushi_us,
+#combo:checked ~ .often_orders,
+#combo:checked ~ .pizza_us,
+#combo:checked ~ .snacks_us,
+#combo:checked ~ .dessert_us {
+  display: none;
+}
+
+#snacks:checked ~ .main,
+#snacks:checked ~ .sushi_us,
+#snacks:checked ~ .often_orders,
+#snacks:checked ~ .combo_us,
+#snacks:checked ~ .pizza_us,
+#snacks:checked ~ .dessert_us {
+  display: none;
+}
+
+#dessert:checked ~ .main,
+#dessert:checked ~ .sushi_us,
+#dessert:checked ~ .often_orders,
+#dessert:checked ~ .combo_us,
+#dessert:checked ~ .pizza_us,
+#dessert:checked ~ .snacks_us {
+  display: none;
+}
